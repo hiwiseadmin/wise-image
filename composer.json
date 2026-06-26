@@ -1,6 +1,7 @@
 {
     "name": "wiseadmin/wise-image",
     "description": "WiseAdmin 图片处理包 — 支持 GD/Imagick 双驱动、阿里云 OSS 风格参数处理、防盗链与签名验证",
+    "homepage": "https://github.com/hiwiseadmin/wise-image",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -9,6 +10,12 @@
         "gd",
         "imagick",
         "wiseadmin"
+    ],
+    "authors": [
+        {
+            "name": "WiseAdmin Team",
+            "email": "wiseadmin@126.com"
+        }
     ],
     "require": {
         "php": ">=8.1"
@@ -40,5 +47,18 @@
                 "wise-image": "config/wise-image.php"
             }
         }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/docs",
+            "/.github",
+            "/phpunit.xml",
+            "/.gitattributes",
+            "/.gitignore",
+            "/*.md",
+            "!/README.md",
+            "/qa/"
+        ]
     }
 }
